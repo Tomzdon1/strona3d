@@ -8,6 +8,8 @@
   <button mat-button [matMenuTriggerFor]="menu"><mat-icon>more_vert</mat-icon></button>
   <mat-menu #menu="matMenu">
     <button mat-menu-item (click)="openAddContactDialog()">New Contact</button>
+    <button mat-menu-item (click)="toggleTheme.emit()">Toogle theme</button>
+    <button mat-menu-item (click)="toggleDir.emit()">Toogle dir</button>
   </mat-menu>
   
 </mat-toolbar>
